@@ -1,0 +1,14 @@
+type Ride @entity {
+  id: ID!
+  rider: Bytes!
+  token: Bytes!
+  maxFare: BigInt!
+  areaHash: Bytes!
+  metaCID: String!
+  expiry: BigInt!
+  acceptedBy: Bytes
+  escrowAmount: BigInt
+  state: Int!
+  createdAt: BigInt!
+  updatedAt: BigInt!
+}
